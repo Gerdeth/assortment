@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 const green = '#39D1B4';
 const yellow = '#FFD712';
-
+console.log("green")
 class Toggle extends React.Component {
   constructor(props){
     super(props);
@@ -17,7 +17,7 @@ class Toggle extends React.Component {
   }
   render() {
     return (
-      <div style={{background:this.state.color}}>
+      <div style ={{background:this.state.color}}>
         <h1>
           Change my color
         </h1>
@@ -25,9 +25,11 @@ class Toggle extends React.Component {
         Change color
         </button>
       </div>
+       
+     
     );
   }
 }
 ReactDOM.render(<Toggle/>,
-  document.getElementById('app'))
+  document.getElementById("app"))
   
